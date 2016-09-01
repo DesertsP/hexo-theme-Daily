@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'PostGrotesk';
+  src: url("/fonts/PostGrotesk-Light.woff") format("woff");
+  /* Modern Browsers */
+  font-style: normal;
+  text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: 'PostGrotesk';
+  src: url("/fonts/PostGrotesk-Bold.woff") format("woff");
+  /* Modern Browsers */
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility; }
+
 .site-header {
   width: 100%;
   background: #fff;
@@ -48,7 +62,7 @@
 .navbar {
   float: right;
   padding-top: $nav-padding-top;
-  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: 'PostGrotesk', Helvetica,Arial,sans-serif;
   ul {
     &:after {
       content: '';
@@ -59,13 +73,25 @@
     }
     li {
       float: left;
+      position: relative;
       margin-left: 20px;
       a {
         text-decoration: none;
-        transition: opacity 0.3s ease;
-        &:hover {
-          opacity: 0.5;
-        }
+        // transition: opacity 0.3s ease;
+      }
+      &:before {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        content: "";
+        width: 0%;
+        height: 1px;
+        background: #7e7e7e;
+        display: block;
+        transition: width 0.25s ease;
+      }
+      &:hover:before {
+          width: 100%;
       }
     }
   }

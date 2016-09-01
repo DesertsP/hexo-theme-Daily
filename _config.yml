@@ -1,12 +1,12 @@
 # basic
 title: Daily
 subtitle: Minimalism, simplicity and refined details
-favicon: https://hexo.io/icon/favicon-96x96.png
+favicon: /images/favicon.ico
 
-# avatar: images/avatar.png
+avatar: //7oxhwl.com1.z0.glb.clouddn.com/image/Logo.png
 # banner_small: images/banner-small.png
 # banner_large: images/banner-large.png
-logo: https://hexo.io/logo.svg
+logo: //7oxhwl.com1.z0.glb.clouddn.com/image/Logo.png
 
 # disqus
 #disqus_shortname: drakeleung
@@ -19,9 +19,11 @@ highlight:
 
 # nav #
 nav:
-  home: .
-  archive: archives
-  # about: about
+  Home: .
+  Archive: archives
+  Books: books.html
+  Links: links.html
+  About: about.html
   # rss: atom.xml
 
 # hexo-renderer-sass
@@ -35,16 +37,18 @@ default_post_title: Untitled
 
 # social
 social:
-  github: https://github.com/GallenHu
-  # weibo: http://weibo.com/10010800
-  # mail: mailto:gallenhu@foxmail.com
+  github: https://github.com/panjunwen
+  weibo: http://t.qq.com/junwen-pan
+  mail: i@panjunwen.com
   # twitter: https://twitter.com/GallenHu
+
+# disqus_shortname: junwens
 
 # widget
 #   title: 标题
 #   content: 内容
 widget:
-  title: 关于本站
-  content: <ul><li><a href="https://github.com/GallenHu/hexo-theme-Daily">如何自定义这里的内容(配置教程)?</a></li></ul>
+  title: ABOUT
+  content: Deserts的博客<br/><br/>记录我的所学所见所想
 
 footer: Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a>
